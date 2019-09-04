@@ -9,7 +9,7 @@
     <div class="info">
         <p>头像：</p>
         <img src="../heng.png"/>
-        <p>姓名：</p>
+        <p>姓名：{{userName}}</p>
         <p>电话：</p>
         <p>16666666666</p>
     </div>
@@ -18,7 +18,15 @@
 
 <script>
 export default {
-  name: "index"
+  name: "index",
+  data: function(){
+      return{
+          userName:""
+      }
+  },
+  created() {
+      this.userName=this.$store.getters.getName;
+  },
 };
 </script>
 <style scoped>
@@ -28,5 +36,8 @@ export default {
   top: 30%;
   margin-left: -100px;
   padding-bottom: 20px;
+}
+li{
+    float: left;
 }
 </style>

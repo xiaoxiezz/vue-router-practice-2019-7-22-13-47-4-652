@@ -2,7 +2,7 @@
   <div class="todolist">
     <p>todolist</p>
     <ul>
-      <li>
+      <li class="returnIndex">
         <router-link to="/index">返回</router-link>
       </li>
     </ul>
@@ -93,5 +93,8 @@ a {
   padding: 8px;
   list-style: none;
   outline: none;
+}
+.returnIndex {
+  float: left;
 }
 </style>
