@@ -1,7 +1,7 @@
 <template>
   <div class="welcome">
     <div class="name">
-      <input placeholder="请输入姓名" />
+      <input placeholder="请输入姓名" v-model="inputName"/>
     </div>
     <div class="btn">
       <button class="button" @click="toIndex">Welcome to TodoList!</button>

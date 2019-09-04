@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <p>首页</p>
-    <ul>
+    <ul >
       <li>
         <router-link to="/personal">个人页面</router-link>
       </li>
